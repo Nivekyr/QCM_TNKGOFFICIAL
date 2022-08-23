@@ -1,42 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-body{
+
+a:link {
+    text-decoration: none!important;
+}
+
+body {
     background-color: #FFFFFF;
 }
-aside, nav{
+
+aside,
+nav {
     background-color: #FBF9F9;
 }
-.SideNav{
+
+.SideNav {
+    position: absolute;
     display: flex;
     margin: 0;
 }
-nav{
-    width: 100%;
+
+nav {
+    width: 80vw;
     height: 10vh;
 }
-aside{
-    width: 20vw ;
+
+aside {
+    width: 20vw;
     height: 100vh;
     text-align: center;
 }
-aside h1{
+
+aside h1 {
     margin-top: 2vh;
     color: #A594F9;
-    font-weight:bolder;
+    font-weight: bolder;
 }
-aside ul{
+
+aside ul {
     width: 100%;
     padding-left: 0;
     margin-top: 10vh;
     justify-content: center;
     margin-left: 10%;
 }
-aside li{
+
+aside li {
     list-style-type: none;
     height: 7vh;
     width: 80%;
@@ -46,29 +60,35 @@ aside li{
     padding-top: 1vw;
     border-radius: 30px;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.inputsearch{
+
+.inputsearch {
     height: 5vh;
     width: 20%;
     border-radius: 30px;
     border: none;
-    text-indent:10%;
+    text-indent: 10%;
+    color: #A594F9;
+    box-shadow: 0px 10px 45px 5px #838383;
+}
+
+.inputsearch::placeholder {
     color: #A594F9;
 }
-.inputsearch::placeholder{
-    color: #A594F9;
-}
-aside li:hover{
+
+aside li:hover {
     background-color: #A594F9;
     color: #FFFFFF;
     cursor: pointer;
     transition: 1s;
 }
-.start_quiz{
+
+.start_quiz {
     width: 10%;
     height: 5vh;
     color: #FFFFFF;
@@ -76,17 +96,20 @@ aside li:hover{
     border-radius: 30px;
     border: transparent none;
 }
-.home_profile{
+
+.home_profile {
     display: flex;
     margin-right: 5vw;
 }
-.profile_picture{
+
+.profile_picture {
     border-radius: 10vw;
     height: 5vh;
     width: 5vh;
     background-color: #A594F9;
 }
-.home_profile p{
+
+.home_profile p {
     color: #A594F9;
     margin-left: 1vw;
     padding-top: 1vh;
