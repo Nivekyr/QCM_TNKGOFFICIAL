@@ -1,3 +1,94 @@
-*{
-    background-color: aliceblue;
+.quizzView {
+    position: absolute;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    margin-left: 20vw;
+    margin-right: 2vw;
+    background-color: #FBF9F9;
+    height: 86vh;
+    width: 78vw;
+    border-radius: 30px;
+    box-shadow: 0px 30px 30px 5px #838383;
+
+    svg {
+        margin-top: 2vh;
+        width: 5vw;
+        height: 5vh;
+        position: absolute;
+    }
 }
+
+.quizzTheme {
+    padding-top: 2vh;
+    padding-right: 2vw;
+
+    h1 {
+        font-weight: bold;
+        color: #a594f9;
+    }
+
+    h3 {
+        color: black;
+        font-size: large;
+    }
+}
+
+.questionBox {
+    display: flex;
+    padding-top: 2vh;
+    padding-right: 2vh;
+    .pictureQuestion {
+        display: flex;
+        background-color: rgb(81, 95, 20);
+        height: 25vh;
+        width: 22.5vw;
+        border-radius: 30px;
+        color: white;
+        margin-left: 2.5vw;
+        h2 {
+            margin-top: 19vh;
+            margin-left: 2vw;
+        }
+    }
+    .statementQuestion {
+        margin-left: 2.5vw;
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: #A594F9;
+        }
+        p {
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+}
+
+.answerText {
+    padding-right: 2vw;
+    padding-left: 2vw;
+    color: #A594F9;
+    p {
+        font-size: 23px;
+        font-weight: 600;
+    }
+}
+
+.boxAnswerCards {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 40px 5px #EDEDED;
+    border-radius: 30px;
+    width: 95%;
+    height: 300px;
+    .answerCard {
+        background-color: #A594F9;
+        height: 100px;
+        width: 400px;
+        border-radius: 30px;
+        color: white;
+        margin-left: 2.5vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
