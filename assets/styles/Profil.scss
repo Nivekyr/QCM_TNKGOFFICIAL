@@ -1,0 +1,112 @@
+
+.Profilepage {
+        position: absolute;
+        margin-top: 10vh;
+        margin-bottom: 4vh;
+        margin-left: 20vw;
+        margin-right: 2vw;
+        background-color: #FBF9F9;
+        height: 86vh;
+        width: 80vw;
+        border-radius: 30px;
+        box-shadow: 0px 30px 30px 5px #838383;
+        padding: 0;
+}
+.up_profile{
+    width: 90%;
+    height:40%;
+    margin: 5% auto auto auto;
+    display: flex;
+}
+.back_profile{
+    height: 50%;
+    width: 90%;
+    margin: auto;
+}
+.picture{
+    height: 30vh;
+    width: 40vh;
+    background-color: black;
+    border-radius: 30px;
+}
+.profile_infos{
+    width: 50vw;
+    height: 30vh;
+    padding: 2vw;
+}
+.profile_infos progress{
+    width: 100%;  
+}
+.profile_stats{
+    display: flex;
+    height: 2vh;
+    width: auto;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+.icone_stats{
+    width: 70px;
+    height: 70px;
+    background-color: #FBF9F9;
+    border-radius: 15px ;
+    box-shadow: 0px 15px 40px 5px #EDEDED;;
+}
+.icone_text{
+    margin-left: 2vw;
+}
+.icone_text h1, .icone_text p {
+    color: #A594F9;
+}
+.passed, .ranking, .correct{
+    display: flex;
+}
+.back_profile{
+    display: flex;
+}
+.bottom_achievements{
+    height: 35vh;
+    width: 30vw;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow:  0px 15px 40px 5px #EDEDED;
+}
+.category{
+    margin-left: 2vw;
+}
+.bottom_category{
+    height: 35vh;
+    width: 30vw;
+}
+.top_achievements, .top_category{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    color: #A594F9;
+}
+.grid{
+    display: grid;
+}
+.grid_category{
+    height: 100px; 
+    width: 100px;
+    background-color: black;
+}
+.card_theme{
+    background-color: beige;
+    width: 17vw;
+    height: 17vh;
+    border-radius: 30px;
+}
+.themeSelection{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    margin-left: 20vw;
+    margin-right: 2vw;
+    background-color: #FBF9F9;
+    height: 86vh;
+    width: 78vw;
+    border-radius: 30px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    }
+
