@@ -1,20 +1,68 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProfilController!{% endblock %}
+{% block title %}Profile{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Kevin/qcm_tnkg/src/Controller/ProfilController.php'|file_link(0) }}">src/Controller/ProfilController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Kevin/qcm_tnkg/templates/profil/index.html.twig'|file_link(0) }}">templates/profil/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <div class="Profilepage container">
+        <div class="up_profile">
+            <div class="picture"></div>
+            <div class="profile_infos">
+                <h1>Oluwatobi Olowu</h1>
+                <progress id="progress" max="100" value="70"></progress>
+                <div class="profile_stats">
+                    <div class="passed">
+                        <div class="icone_stats">
+                        </div>
+                        <div class="icone_text">
+                            <h1>21</h1>
+                            <p>Quiz passed</p>
+                        </div>
+                    </div>
+                        <div class="ranking">
+                        <div class="icone_stats">
+                        </div>
+                        <div class="icone_text">
+                            <h1>2000è</h1>
+                            <p>Rank</p>
+                        </div>
+                    </div>
+                        <div class="correct">
+                        <div class="icone_stats">
+                        </div>
+                        <div class="icone_text">
+                            <h1>200</h1>
+                            <p>Correct answers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back_profile">
+            <div class="achievements">
+                <div class="top_achievements">
+                    <h3>Achievements</h3>
+                    <progress id="progress" max="100" value="30"></progress>
+                </div>
+                <div class="bottom_achievements">
+                    
+                </div>
+            </div>
+            <div class="category">
+                <div class="top_category">
+                    <h3>Favorite Category</h3>
+                    <p>View all</p>
+                </div>
+                <div class="grid-card">
+                    <div class="row grid_card1">
+                        <div class="col m-3 mt-0 card_theme"></div>
+                        <div class="col m-3 mt-0 card_theme"></div>
+                    </div>
+                    <div class="row grid_card2">
+                        <div class="col m-3 mt-0 card_theme"></div>
+                        <div class="col m-3 mt-0 card_theme"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
