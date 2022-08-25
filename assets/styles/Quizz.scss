@@ -1,14 +1,14 @@
 .quizzView {
     position: absolute;
     margin-top: 10vh;
-    margin-bottom: 4vh;
-    margin-left: 20vw;
-    margin-right: 2vw;
+    // margin-bottom: 4vh;
+    // margin-left: 20vw;
+    // margin-right: 2vw;
     background-color: #FBF9F9;
-    height: 86vh;
-    width: 78vw;
+    height: 88vh;
+    width: 82vw;
     border-radius: 30px;
-    box-shadow: 0px 30px 30px 5px #838383;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
 
     svg {
         margin-top: 2vh;
@@ -76,7 +76,7 @@
 
 .boxAnswerCards {
     background: #FFFFFF;
-    box-shadow: 0px 15px 40px 5px #EDEDED;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
     border-radius: 30px;
     width: 95%;
     height: 300px;
@@ -89,6 +89,7 @@
         margin-left: 2.5vw;
         align-items: center;
         justify-content: center;
+        box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
     }
 }
 
