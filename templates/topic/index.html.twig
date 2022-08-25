@@ -3,18 +3,29 @@
 {% block title %}Hello TopicController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+ <div class="topicSelection container">
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-1 w-1" viewBox="0 0 20 20" fill="currentColor">
+           <a href="{{path('app_theme')}}">  <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></a>
+        </svg>
+        
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Kevin/qcm_tnkg/src/Controller/TopicController.php'|file_link(0) }}">src/Controller/TopicController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Kevin/qcm_tnkg/templates/topic/index.html.twig'|file_link(0) }}">templates/topic/index.html.twig</a></code></li>
-    </ul>
-</div>
+        <h1 class="text-end">Select Topic</h1>
+        <h3 class="text-end">Then the you'll have to choose a gamemode !</h3>  
+
+    <div class="gridCardTopic"> 
+        
+        <a href="{{path("app_gamemode")}}">
+            <div class="cardTopic">
+                <h2>Les capitales du monde</h2>
+            </div>
+        </a>  
+        <div class="cardTopic">
+            <h2>Les Drapeaux</h2>
+        </div>
+        <div class="cardTopic">
+            <h2>La France</h2>
+        </div>
+    </div>
+    </div>
 {% endblock %}
