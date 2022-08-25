@@ -3,11 +3,8 @@
 {% block title %}Hello GamemodeController!{% endblock %}
 
 {% block body %}
-<div class ="container-fluid View_gamemode">
-    <h1 class="text-end">Drapeaux</h1>
-    <h3 class="text-end">Selectionnez un niveau</h3>  
-</div>
-    <div class="gamemodeSelection container">
+<div class="container">
+    <div class="gamemodeSelection container-fluid">
 
         <svg xmlns="http://www.w3.org/2000/svg" class="h-1 w-1" viewBox="0 0 20 20" fill="currentColor">
            <a href="{{path('app_topic')}}">  <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></a>
@@ -34,5 +31,6 @@
                 <h2 class="text-center">Cash</h2>
             </div>
         </a> 
+    </div>
     </div>
 {% endblock %}

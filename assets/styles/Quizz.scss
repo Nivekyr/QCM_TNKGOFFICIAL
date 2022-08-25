@@ -9,7 +9,6 @@
     width: 82vw;
     border-radius: 30px;
     box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
-
     svg {
         margin-top: 2vh;
         width: 5vw;
@@ -21,12 +20,10 @@
 .quizzTheme {
     padding-top: 2vh;
     padding-right: 2vw;
-
     h1 {
         font-weight: bold;
         color: #a594f9;
     }
-
     h3 {
         color: black;
         font-size: large;
@@ -79,11 +76,11 @@
     box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
     border-radius: 30px;
     width: 95%;
-    height: 300px;
+    height: 33vh;
     .answerCard {
         background-color: #A594F9;
-        height: 100px;
-        width: 400px;
+        height: 11vh;
+        width: 20vw;
         border-radius: 30px;
         color: white;
         margin-left: 2.5vw;
@@ -92,4 +89,3 @@
         box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
     }
 }
-
