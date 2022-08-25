@@ -4,34 +4,33 @@
 
 {% block body %}
 
-    <div class="quizzView container">
+    <div class="container">
+        <div class="quizzView container-fluid">
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-1 w-1" viewBox="0 0 20 20" fill="currentColor">
-        <a href="{{path('app_home')}}"> <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></a>
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-1 w-1" viewBox="0 0 20 20" fill="currentColor">
+            <a href="{{path('app_home')}}"> <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></a>
+            </svg>
 
-        <div class="quizzTheme text-end">
-            <h1>Geographie</h1>
-            <h3>Answer the question below</h3>
-        </div>
-
-        <div class="questionBox container">
-            <div class="pictureQuestion">
-                <h2>Geographie</h2>
-            </div>
-            <div class="statementQuestion">
-                <h2>Question x/20</h2>
-                <p>Quelle est la capitale de la Hongrie ?</p>
-            </div>
-        </div>
-
-        <div class="answerBox mt-5">
-            
-            <div class="answerText d-flex justify-content-between">
-                <p>Choose answer</p>
-                <p>20</p>
+            <div class="quizzTheme text-end">
+                <h1>Geographie</h1>
+                <h3>Answer the question below</h3>
             </div>
 
+            <div class="questionBox container">
+                <div class="pictureQuestion">
+                    <h2>Geographie</h2>
+                </div>
+                <div class="statementQuestion">
+                    <h2>Question x/20</h2>
+                    <p>Quelle est la capitale de la Hongrie ?</p>
+                </div>
+            </div>
+
+            <div class="answerBox mt-5">
+                
+                <div class="answerText d-flex justify-content-between">
+                    <p>Choose answer</p>
+                    <p>20</p>
             <div class="boxAnswerCards container justify-content-center">
                 <div class="boxAnswerCards1 row row-cols-2 justify-content-center">
                     <div class="answerCard col d-flex">
@@ -43,15 +42,28 @@
                     </div>
                 </div>
 
-                <div class="boxAnswerCards2 row row-cols-2 mt-4 justify-content-center">
-                    <div class="answerCard col d-flex">
-                        <p>Réponse 3</p>
+                <div class="boxAnswerCards container justify-content-center">
+                    <div class="boxAnswerCards1 row row-cols-2 pt-5 justify-content-center">
+                        <div class="answerCard col d-flex">
+                            <p>Réponse 1</p>
+                        </div>
+
+                        <div class="answerCard col d-flex">
+                            <p>Réponse 2</p>
+                        </div>
                     </div>
 
-                    <div class="answerCard col d-flex">
-                        <p>Réponse 4</p>
+                    <div class="boxAnswerCards2 row row-cols-2 mt-4 justify-content-center">
+                        <div class="answerCard col d-flex">
+                            <p>Réponse 3</p>
+                        </div>
+
+                        <div class="answerCard col d-flex">
+                            <p>Réponse 4</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
