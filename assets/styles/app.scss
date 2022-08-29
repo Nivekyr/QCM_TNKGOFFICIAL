@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "./Theme.scss";
 @import "./SideNav.scss";
-@import "./Quizz.scss" ;
+@import "./Quizz.scss";
 @import "./Profil.scss";
 @import "./Home.scss";
 @import "./GameMode.scss";
@@ -10,4 +10,7 @@
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
