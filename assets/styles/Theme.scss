@@ -1,9 +1,10 @@
 .themeSelection {
-    margin-top: 10vh;
+    overflow: hidden;
+    margin-top: 11vh;
+    margin-left: 2vw;
     background-color: #FBF9F9;
     height: 88vh;
-    width: 78vw;
-    margin-left: 4vw;
+    width: 96vw;
     border-radius: 30px;
     box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
     position: absolute;
@@ -27,17 +28,24 @@
 
 .gridCardTheme {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     .cardTheme {
+        background-size: cover;
         display: flex;
         background-color: red;
         height: 25vh;
-        width: 22.5vw;
+        width: 20vw;
+        margin-left: 2vw;
+        margin-bottom: 2vh;
         border-radius: 30px;
         color: white;
-        margin-left: 2.5vw;
-        h2 {
+        h3 {
+            position: absolute;
+            color: #A594F9;
             margin-top: 19vh;
-            margin-left: 1vw;
         }
     }
 }

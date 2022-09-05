@@ -3,8 +3,7 @@
 {% block title %}Hello TopicController!{% endblock %}
 
 {% block body %}
-<div class="container">
- <div class="topicSelection container-fluid">
+ <div class="topicSelection">
 
         <svg xmlns="http://www.w3.org/2000/svg" class="h-1 w-1" viewBox="0 0 20 20" fill="currentColor">
            <a href="{{path('app_theme')}}">  <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></a>
@@ -14,20 +13,14 @@
         <h1 class="text-end">Select Topic</h1>
         <h3 class="text-end">Then the you'll have to choose a gamemode !</h3>  
 
-    <div class="gridCardTopic"> 
-        
-        <a href="{{path("app_gamemode")}}">
-            <div class="cardTopic">
-                <h2>Les capitales du monde</h2>
-            </div>
-        </a>  
-        <div class="cardTopic">
-            <h2>Les Drapeaux</h2>
-        </div>
-        <div class="cardTopic">
-            <h2>La France</h2>
-        </div>
-    </div>
+        <div class="gridCardTopic"> 
+    {% if topic is defined %}
+    {% for to in topic %}
+            <a href='/quizz/{{to.id}}'><div class="cardTopic" style="background-image: url({{to.TopicImage}})"><h3>{{to.TopicName}}</h3></div></a>
+    {% endfor %}
+    {% else %}
+        No topic found
+        {% endif %}
     </div>
     </div>
 {% endblock %}

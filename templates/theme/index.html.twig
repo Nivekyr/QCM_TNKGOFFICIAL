@@ -3,8 +3,7 @@
 {% block title %}Hello ThemeController!{% endblock %}
 
 {% block body %}
-<div class="container theme">
-    <div class="themeSelection container-fluid">
+    <div class="themeSelection">
 
         <svg xmlns="http://www.w3.org/2000/svg" class="h-1 w-1" viewBox="0 0 20 20" fill="currentColor">
             <a href="{{path('app_home')}}">  <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></a>
@@ -12,22 +11,17 @@
         
 
         <h1 class="text-end">Select Theme</h1>
-        <h3 class="text-end">Then you'll choose a topic !</h3>  
+        <h3 class="text-end">Then you'll choose a topic !</h3> 
 
-    <div class="gridCardTheme">         
-        <a href="{{path("app_topic")}}">
-            <div class="cardTheme">
-                <h2>Geographie</h2>
-            </div>
-        </a>  
-
-        <div class="cardTheme">
-            <h2>Jeux vidéos</h2>
-        </div>
-        <div class="cardTheme">
-            <h2>Musique</h2>
-        </div>
-    </div>
+        <div class="gridCardTheme"> 
+{% if theme is defined %}
+{% for t in theme %}
+    <a href='/topic/{{t.id}}'><div class="cardTheme" style="background-image: url({{t.ThemeImage}})"><h3>{{t.ThemeName}}</h3></div></a>
+{% endfor %}
+{% else %}
+No categorie found
+{% endif %}
     </div>
     </div>
 {% endblock %}
+

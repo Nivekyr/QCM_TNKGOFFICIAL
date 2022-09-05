@@ -11,3 +11,7 @@ import './styles/app.scss';
 
 // start the Stimulus application
 import './bootstrap';
+
+
+answer = document.querySelector('.anwser');
+questionBlock = document.querySelector('.cardQuizz').style.display;

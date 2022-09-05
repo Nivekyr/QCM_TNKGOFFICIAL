@@ -14,11 +14,6 @@ body {
     background-color: #FFFFFF;
 }
 
-aside,
-nav {
-    background-color: #FBF9F9;
-}
-
 .SideNav {
     position: absolute;
     display: flex;
@@ -26,41 +21,9 @@ nav {
 }
 
 nav {
-    width: 80vw;
+    background-color: #FBF9F9;
+    width: 100vw;
     height: 10vh;
-}
-
-aside {
-    width: 20vw;
-    height: 100vh;
-    text-align: center;
-}
-
-aside h1 {
-    margin-top: 2vh;
-    color: #A594F9;
-    font-weight: bolder;
-}
-
-aside ul {
-    width: 100%;
-    padding-left: 0;
-    margin-top: 10vh;
-    justify-content: center;
-}
-
-aside li {
-    list-style-type: none;
-    height: 7vh;
-    width: 80%;
-    color: #A594F9;
-    font-size: 20px;
-    margin-top: 2vh;
-    padding-top: 1vw;
-    border-radius: 30px;
-}
-
-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,7 +43,7 @@ nav {
     color: #A594F9;
 }
 
-aside li:hover {
+nav li:hover {
     background-color: #A594F9;
     color: #FFFFFF;
     cursor: pointer;

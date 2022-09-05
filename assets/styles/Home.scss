@@ -5,10 +5,11 @@
     font-weight: 400;
     font-style: normal;
 }
-.home_View{
+
+.home_View {
     margin-top: 10vh;
     margin-bottom: 4vh;
-    margin-left: 20vw;
+    margin-left: 4vw;
     margin-right: 2vw;
     background-color: #FBF9F9;
     height: 86vh;
@@ -17,18 +18,18 @@
     box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
     position: absolute;
 }
-.welcome{
-    h1{
+
+.welcome {
+    h1 {
         text-align: center;
         font-weight: 700;
         margin-top: revert;
     }
-    } 
+}
 
-.play{
-    
-    a{
-    color: #ffffff; 
+.play {
+    a {
+        color: #ffffff;
     }
     width: 15%;
     height: 7vh;
@@ -42,23 +43,24 @@
     align-items: center;
     margin-inline: auto;
     margin-top: 4vh;
-    
 }
+
 .informations {
     ul {
         list-style-type: none;
-}
+    }
     display: flex;
     place-content: center;
     color: #A594F9;
     list-style: none;
     margin-top: 6vh;
 }
+
 .ranking {
     margin-left: 5%;
     margin-right: 5%;
-    
 }
+
 li.number {
     font-weight: 900;
 }
@@ -72,10 +74,12 @@ li.number {
     margin-top: 2vh;
     box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
 }
+
 .grid_card {
     margin-right: inherit;
 }
-.more_choice{
+
+.more_choice {
     text-align: right;
     font-weight: inherit;
     font-size: larger;
@@ -83,9 +87,10 @@ li.number {
     margin-top: 4vh;
     color: #A594F9;
     a {
-        color:#A594F9;
+        color: #A594F9;
     }
 }
+
 span.more_button {
     font-size: larger;
     margin-right: 8vh;
@@ -95,3 +100,8 @@ span.more_button {
     margin-top: 12vh;
 }
 
+@media only screen and (max-width: 1700px) {
+    .home_View {
+        margin-left: 8vw;
+    }
+}
