@@ -1,0 +1,29 @@
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <div class="container mt-5 col-3 text-center">
+        <h1 class="container-fluid">Login to your account</h1>
+        <h3 class="mb-5">with your registered Email Address<h3>
+        <div class="login text-start">
+            <h3>Email address</h3>
+            <input class="rounded-pill b-0 col-12 mb-5" type="text" placeholder="Enter email address"/>
+            <h3>Enter password</h3>
+            <input class="rounded-pill b-0 col-12" type="text" placeholder="Password"/>
+            <div class="checkbox d-flex">
+                <input type="checkbox"/>
+                <h6 class="ms-3 mt-4">Remember password</h6>
+            </div>
+            <button class="login-btn rounded-pill col-12 b-0 text-light" type="submit">Login</button>
+            <p class="text-center mt-2">or</p>
+            <button class="login-btn-google rounded-pill col-12 text-dark" type="submit">Login with google</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
