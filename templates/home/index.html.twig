@@ -4,68 +4,63 @@
 
 {% block body %}
 
-    <div class="homeview container">
-        
-<div class ="container-fluid home_View">
-    <div class = "welcome" >
-        <h1>Welcome Gabriel</h1>
-    </div>
-    <div class="play" >
-        <a href="{{path('app_theme')}}"><li><span  class="start_button">Start Quiz</span></li></a>   
-    </div>
-    <div class="informations" >
-        <div class = "passed" >
-            <ul>
-                <li class="number">27</li>
-                <li>Quiz passed</li>
-            </ul>
+<div class="homeview container">
+    <div class="container-fluid home_View">
+        <div class="welcome" >
+            <h1>Welcome Gabriel</h1>
         </div>
-        <div class="ranking" >
-            <ul>
-                <li class="number">2000ème</li>
-                <li>Worl ranking</li>
-            </ul>
+        <div class="play" >
+            <a href="{{path('app_theme')}}">
+                <li><span  class="start_button">Start Quiz</span></li>
+            </a>   
         </div>
-        <div class="correct" >
-            <ul>
-                <li class="number">200</li>
-                <li>Correct Answers</li>
-            </ul>
+        <div class="informations" >
+            <div class="passed" >
+                <ul>
+                    <li class="number">27</li>
+                    <li>Quiz passed</li>
+                </ul>
+            </div>
+            <div class="ranking" >
+                <ul>
+                    <li class="number">2000ème</li>
+                    <li>Worl ranking</li>
+                </ul>
+            </div>
+            <div class="correct" >
+                <ul>
+                    <li class="number">200</li>
+                    <li>Correct Answers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid_card_theme col-12">
+                <a href="{{path('app_theme')}}">
+                    <div class="Card_theme_home bg-danger"></div>
+                </a>
+                <a href="{{path('app_theme')}}">
+                    <div class="Card_theme_home bg-danger"></div>
+                </a>
+                <a href="{{path('app_theme')}}">
+                    <div class="Card_theme_home bg-danger"></div>
+                </a>
+                <a href="{{path('app_theme')}}">
+                    <div class="Card_theme_home bg-danger"></div>
+                </a>
+                <a href="{{path('app_theme')}}">
+                    <div class="Card_theme_home bg-danger"></div>
+                </a>
+                <a href="{{path('app_theme')}}">
+                    <div class="Card_theme_home bg-danger"></div>
+                </a>
+                <a href="{{path('app_theme')}}">
+                    <div class="Card_theme_home bg-danger"></div>
+                </a>
+                <a href="{{path('app_theme')}}">
+                    <div class="Card_theme_home bg-danger"></div>
+                </a>
+        </div>
     </div>
 </div>
-<div class="grid_card">
-    <div class="row grid_car1">
-        <div class="col card_theme">
-            <a href="{{path('app_theme')}}"><span  class="more_button">theme</span></li></a>    
-        </div>
-        <div class="col card_theme">
-            <a href="{{path('app_theme')}}"><span  class="more_button">theme</span></li></a>    
-        </div>
-        <div class="col card_theme">
-            <a href="{{path('app_theme')}}"><span  class="more_button">theme</span></li></a>    
-        </div>
-        <div class="col card_theme">
-            <a href="{{path('app_theme')}}"><span  class="more_button">theme</span></li></a>    
-        </div>
-    </div>
-    <div class="row row grid_car2">
-        <div class="col card_theme">
-            <a href="{{path('app_theme')}}"><span  class="more_button">theme</span></li></a>    
-        </div>
-        <div class="col card_theme">
-            <a href="{{path('app_theme')}}"><span  class="more_button">theme</span></li></a>    
-        </div>
-        <div class="col card_theme">
-            <a href="{{path('app_theme')}}"><span  class="more_button">theme</span></li></a>    
-        </div>
-        <div class="col card_theme">
-            <a href="{{path('app_theme')}}"><span  class="more_button">theme</span></li></a>    
-        </div>
-    </div>
-</div>  
-<div class="more_choice" >
-    <a href="{{path('app_theme')}}"><span  class="more_choice_button">More topics </span></li></a>   
-</div>
-    </div>
 
 {% endblock %}

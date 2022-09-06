@@ -46,14 +46,14 @@
 }
 
 .informations {
-    ul {
-        list-style-type: none;
-    }
     display: flex;
     place-content: center;
     color: #A594F9;
     list-style: none;
     margin-top: 6vh;
+        ul {
+        list-style-type: none;
+    }
 }
 
 .ranking {
@@ -64,52 +64,21 @@
 li.number {
     font-weight: 900;
 }
-
-.card_theme {
-    background-color: #A594F9;
-    height: 17vh;
-    border-radius: 30px;
-    margin-left: 4.5vw;
-    margin-right: 2vw;
-    margin-top: 2vh;
-    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
-}
-
-.grid_card {
-    margin-right: inherit;
-}
-
-.more_choice {
-    text-align: right;
-    font-weight: inherit;
-    font-size: larger;
-    margin-right: 11vh;
-    margin-top: 4vh;
-    color: #A594F9;
-    a {
-        color: #A594F9;
-    }
-}
-
-span.more_button {
-    font-size: larger;
-    margin-right: 8vh;
+.grid_card_theme{
+    height: 60%;
+    width: 80%;
     display: flex;
-    color: #ffffff;
-    flex-direction: row-reverse;
-    margin-top: 12vh;
+    margin-left: 10%;
+    justify-content: center;
 }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 9c24081a687a6e7d7562cb29b04361669449a3e5
-=======
-
->>>>>>> 9c24081a687a6e7d7562cb29b04361669449a3e5
-@media only screen and (max-width: 1700px) {
-    .home_View {
-        margin-left: 8vw;
+.Card_theme_home{
+    height: 20vh;
+    background-color: red;
+    width: 20vh;
+    margin: 2vh;
+    border-radius: 20px;
+    a {
+        height: 100%;
+        width: 100%;
     }
 }
