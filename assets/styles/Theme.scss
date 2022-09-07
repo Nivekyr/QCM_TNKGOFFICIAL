@@ -29,5 +29,20 @@
 .grid_card_theme{
     display: flex;
     flex-wrap: wrap;
-    
+}
+.gridCardTheme{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vh 10vw 5vw 10vw;
+}
+.cardTheme{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 20px;
+    margin:3vh;
+}
+
+.cardTheme:hover{
+    background-color: gray;
 }
